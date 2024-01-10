@@ -1,11 +1,11 @@
 <script setup>
-  import { RouterLink, RouterView } from 'vue-router'
-  import Navbar from '@/components/Home/Navbar.vue';
+  import { RouterView } from 'vue-router'
+  import Navbar from '@/components/Navbar.vue';
 </script>
 
 <template>
-  <Navbar/>
-  <div class="px-80">
+  <Navbar v-if="$route.name != 'login' && $route.name != 'register'"/>
+  <div :class="($route.name == 'home' ? 'px-80' : '')">
     <RouterView />
   </div>
 </template>

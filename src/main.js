@@ -6,6 +6,7 @@ import router from './router'
 
 const app = createApp(App)
 
+app.config.globalProperties.AppName = 'Tokopaedi'
 app.use(router)
 
 app.mount('#app')

@@ -6,7 +6,7 @@ import { RouterLink } from 'vue-router'
     <div class="w-full h-20 bg-white text-white flex items-center justify-between px-72 shadow-md">
       <!-- Left Side -->
       <div class="flex items-center gap-20">
-        <RouterLink to="/" class="text-[#3468C0] text-lg font-bold">Tokopaedi</RouterLink>
+        <RouterLink to="/" class="text-[#3468C0] text-lg font-bold">{{ this.AppName }}</RouterLink>
         <!-- component -->
         <div class='max-w-md mx-auto w-[30rem]'>
             <div class="relative flex items-center w-full h-9 rounded-lg bg-white overflow-hidden border">
@@ -29,7 +29,7 @@ import { RouterLink } from 'vue-router'
         <RouterLink to="/chart">
           <i class="fa-solid fa-cart-shopping text-black text-xl mr-5"></i>
         </RouterLink>
-        <RouterLink to="/" class="bg-[#3468C0] px-5 py-1.5 rounded-full">Login</RouterLink>
+        <RouterLink to="/login" class="bg-[#3468C0] px-5 py-1.5 rounded-full">Login</RouterLink>
         <RouterLink to="/about" class="px-5 py-1.5 rounded-full border text-black">Sign up</RouterLink>
       </div>
     </div>
